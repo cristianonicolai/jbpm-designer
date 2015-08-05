@@ -22,12 +22,12 @@ import javax.annotation.PostConstruct;
 import javax.enterprise.context.Dependent;
 import javax.inject.Inject;
 
-import com.github.gwtbootstrap.client.ui.Button;
-import com.github.gwtbootstrap.client.ui.ValueListBox;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.user.client.Event;
 import com.google.gwt.user.client.Window;
+import org.gwtbootstrap3.client.ui.Button;
+import org.gwtbootstrap3.client.ui.ValueListBox;
 import org.jboss.errai.marshalling.client.Marshalling;
 import org.jbpm.designer.client.resources.i18n.DesignerEditorConstants;
 import org.jbpm.designer.client.shared.AssignmentData;
@@ -255,8 +255,8 @@ public class ActivityDataIOEditor extends BaseModal {
     public void onShow(Event e) {
         double width = (double) Window.getClientWidth() * 0.6D;
         this.setWidth(width + "px");
-        double maxHeight = (double) Window.getClientHeight() * 0.6D;
-        this.setMaxHeigth(maxHeight + "px");
+        //double maxHeight = (double) Window.getClientHeight() * 0.6D;
+        //this.setMaxHeigth(maxHeight + "px");
         double widgetWidth = width - 25;
         if (inputAssignmentsWidget.isVisible()) {
             inputAssignmentsWidget.setWidth(widgetWidth + "px");
