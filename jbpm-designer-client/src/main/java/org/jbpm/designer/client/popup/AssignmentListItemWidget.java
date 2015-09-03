@@ -380,7 +380,7 @@ public class AssignmentListItemWidget extends Composite implements HasModel<Assi
      * corresponding {@link AssignmentRow}.
      */
     private void initAssignmentControls() {
-        deleteButton.setIcon(IconType.REMOVE);
+        deleteButton.setIcon( IconType.TRASH );
 
         if (assignment.getModel().getVariableType() == VariableType.OUTPUT) {
             constant.setVisible(false);
